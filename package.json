@@ -1,0 +1,27 @@
+{
+  "name": "quiz-socket",
+  "version": "1.0.0",
+  "description": "Socket server for Gimlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshfeinsilber/quiz-socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshfeinsilber/quiz-socket/issues"
+  },
+  "homepage": "https://github.com/joshfeinsilber/quiz-socket#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
