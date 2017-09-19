@@ -5,6 +5,8 @@ var rooms = [];
 
 const handleSockets = function(io) {
   io.on('connection', function(socket) {
+    
+    socket.join(socket.id);
 
     if (c.settings.connectLog) {
       console.log(`🔑 ${socket.id} connected!`);
@@ -40,6 +42,10 @@ const handleSockets = function(io) {
     
     socket.on('group', function(resp){
       io.sockets.in(resp.room).emit(resp.action, resp.data || null);
+    })
+    
+    socket.on('direct', function(resp){
+      io.sockets.in(resp.id).emit(resp.action, resp.data || null);
     })
     
     socket.on('disconnecting', function(){
