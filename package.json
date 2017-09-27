@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index"
   },
+  "engines": {
+    "node": "8.2.1",
+    "npm": "5.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshfeinsilber/quiz-socket.git"
